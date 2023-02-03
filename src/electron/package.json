@@ -1,4 +1,5 @@
 {
-    "name": "my-editod",
+    "name": "my-editor",
+    "version": "0.0.1",
     "main": "main.js"
 }
