@@ -6,14 +6,23 @@ import { ElectronWindow, WINDOW } from './window';
   providedIn: 'root'
 })
 
+
+
 export class EditorService {
-  private get ipcRenderer(): Electron.IpcRenderer { return this.window.require('electron').ipcRenderer;}
-  constructor(@Inject(WINDOW) private window: ElectronWindow)  { }
+
+  private get ipcRenderer(): Electron.IpcRenderer {
+    return this.window.require('electron').ipcRenderer;
+  }
+
+  constructor(@Inject(WINDOW) private window: ElectronWindow) { }
+
   getContent(): Promise<string> {
     return this.ipcRenderer.invoke('getContent');
   }
-    setContent(content: string) {
+
+  setContent(content: string) {
     this.ipcRenderer.invoke('setContent', content);
   }
 
 }
+

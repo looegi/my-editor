@@ -18,6 +18,7 @@ function createWindow () {
 }
 
 app.whenReady().then(() => {
+    console.log(contentFile)
   createWindow();
 });
 

@@ -9,5 +9,5 @@ module.exports = {
     path: path.join(process.cwd(), 'dist', 'my-editor'),
     filename: 'shell.js'
   },
-  target: 'node'
+ 
 };

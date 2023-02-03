@@ -5,7 +5,10 @@ import { EditorService } from '../editor.service';
   templateUrl: './editor.component.html',
   styleUrls: ['./editor.component.css']
 })
-export class EditorComponent implements OnInit {
+
+export class EditorComponent  implements OnInit {
+
+
   myContent = '';
 
   constructor(private editorService: EditorService) { }
